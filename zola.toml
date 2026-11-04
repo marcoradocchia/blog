@@ -1,0 +1,75 @@
+base_url = "https://example.com"
+title = "Marco Radocchia"
+description = "Marco Radocchia's personal blog."
+default_language = "en"
+theme = "serene"
+output_dir = "public"
+compile_sass = true
+minify_html = false
+build_search_index = false # Keep this false, search is temporarily unsupported
+generate_feeds = false
+feed_filenames = ["feed.xml"]
+taxonomies = [{ name = "tags" }, { name = "categories" }]
+
+[markdown]
+render_emoji = false
+external_links_target_blank = false
+external_links_no_follow = true
+external_links_no_referrer = true
+smart_punctuation = false
+github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+#=========================================================================================
+
+[extra]
+name = "Marco Radocchia"
+handle = "marcoradocchia"
+bio = "physics student, computer enthusiast"
+avatar = "img/avatar.webp"
+nav = [
+    { name = "posts", path = "/posts" },
+    { name = "tags", path = "/tags" },
+]
+links = [
+      { name = "GitHub", icon = "github", url = "https://github.com/marcoradocchia" },
+      { name = "Email", icon = "email", url = "mailto:mar.radocchia@proton.me" },
+      { name = "Telegram", icon = "telegram", url = "https://t.me/marco_radocchia" }
+]
+blog_section_path = "/posts"
+
+back_link_text = "Back" # Text of the back button
+color_scheme = "auto" # "auto" | "light" | "dark"
+
+# og_image = "img/og.png" # The default image for social media sharing (Open Graph), a path in static folder or a full URL
+
+footer_copyright = "© 2026 Marco Radocchia"
+footer_credits = false # Whether to show "Built with zola and serene" in footer
+
+not_found_error_text = "404 Not Found"
+not_found_recover_text = "« back to home »"
+
+# Site-wide default values of display options, can be overridden in a section's `_index.md`, and again in a post's front-matter
+date_format = "%b %d, %Y"
+toc = true
+code_copy = true
+comment = true
+math = true
+mermaid = true
+outdated_alert = false
+outdated_alert_days = 120
+outdated_alert_text_before = "This article was last updated "
+outdated_alert_text_after = " days ago and may be out of date."
+
+reaction = false # Whether to enable anonymous emoji reactions (Note: You need to set up a working api endpoint to enable this feature)
+reaction_align = "right" # "left" | "center" | "right"
+reaction_endpoint = "https://example.com/api/reaction"
