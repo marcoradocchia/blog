@@ -1,0 +1,8 @@
+name = "blog"
+compatibility_date = "2026-11-04"
+
+[build]
+command = "bash ./build.sh"
+
+[assets]
+directory = "./public"
