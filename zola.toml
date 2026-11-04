@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://blog.mar-radocchia.workers.dev"
 title = "Marco Radocchia"
 description = "Marco Radocchia's personal blog."
 default_language = "en"
